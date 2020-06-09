@@ -8,6 +8,6 @@ public class Props {
 	}
 	
 	public interface ConfigProps{
-		public static String API_KEY = "27be5be778763da7807ac984c76191ca";//System.getProperty("apikey");
+		public static String API_KEY = System.getProperty("apikey");
 	}
 }
