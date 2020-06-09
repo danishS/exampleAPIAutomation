@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Sample API Tests" parallel="none">
+
+	<listeners>
+		<listener class-name="io.bytelogic.api.tests.listeners.TestListeners" />
+	</listeners>
+
+	<!-- Available groups are Full Smoke Regression e2e -->
+	<test name="Test">
+		<groups>
+			<run>
+				<include name="Full" />
+				<exclude name="Broken" />
+			</run>
+		</groups>
+		<packages>
+			<package name="io.bytelogic.api.tests.apitests.*" />
+		</packages>
+	</test>
+</suite>
