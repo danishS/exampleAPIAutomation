@@ -11,6 +11,11 @@ import javax.xml.xpath.XPathFactory;
 import org.testng.Assert;
 import org.w3c.dom.Document;
 
+/**
+   This class is a utility class that helps parse through an xml file and read
+   its content. In this framework's case, it parses the testng.xml file and
+   retrieves configs for a test run.
+**/
 public class Config {
 	private static String SYSTEM_TEST_PROP = "system.test.";
 	private static String USER_DIR_PROP = "user.dir";
